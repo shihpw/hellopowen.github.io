@@ -12,9 +12,9 @@ const responses = {
     name: {
         keywords: ['what is your name', "what's your name", 'who are you', 'your name'],
         responses: [
-            "I'm Powen, your friendly chatbot! 🤖",
-            "My name is Powen. Nice to meet you!",
-            "I go by Powen. What's your name?"
+            "I'm Pobot, your friendly chatbot! 🤖",
+            "My name is Pobot. Nice to meet you!",
+            "I go by Pobot. What's your name?"
         ]
     },
     howAreYou: {
