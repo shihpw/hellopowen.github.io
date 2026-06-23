@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pobot - Chatbot</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pobot</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="chatbot-wrapper">
-            <div class="chatbot-header">
-                <h1>Pobot 🤖</h1>
-                <p>Chat with me!</p>
-            </div>
-            
-            <div class="chat-window" id="chatWindow">
-                <div class="message bot-message">
-                    <p>Hi! I'm Pobot. How can I help you today? Try asking me questions like "How are you?", "What's your name?", or "Tell me a joke!"</p>
-                </div>
-            </div>
-            
-            <div class="chat-input-area">
-                <input 
-                    type="text" 
-                    id="userInput" 
-                    placeholder="Type your message..." 
-                    autocomplete="off"
-                >
-                <button id="sendBtn">Send</button>
-            </div>
-        </div>
-    </div>
+  <main class="app">
+    <section class="hero">
+      <h1>Pobot</h1>
+      <p class="subtitle">Product Experience Definition and Systems Assistant</p>
+      <p class="description">
+        Pobot helps reason through product definition, assumptions, constraints,
+        feedback, evidence, and the gap between intended and actual behaviour.
+      </p>
+    </section>
 
-    <script src="chatbot.js"></script>
+    <section class="chat-container">
+      <div id="chat-box" class="chat-box"></div>
+
+      <div class="input-row">
+        <input
+          id="user-input"
+          type="text"
+          placeholder="Ask about product definition, assumptions, constraints, or behaviour..."
+          autocomplete="off"
+        />
+        <button id="send-button">Send</button>
+      </div>
+    </section>
+
+    <section class="examples">
+      <p>Try asking:</p>
+      <ul>
+        <li>What is this product?</li>
+        <li>What assumptions are we making?</li>
+        <li>What constraints are shaping this?</li>
+        <li>Why does it behave differently than intended?</li>
+        <li>What evidence do we have?</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="chatbot.js"></script>
 </body>
 </html>
